@@ -1,0 +1,171 @@
+/*Global Section*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Cardo', serif;*/
+}
+
+p{
+    margin-bottom: 0;
+}
+
+
+/*Header CSS*/
+
+header{
+
+background: url(../images/banner-bg.png);
+
+background-position: center;
+
+background-size: cover;
+
+height: 100vh;
+}
+
+.navbar{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar .nav-item .nav-link{
+    color: #fff;
+    margin-left: 30px;
+    transform: uppercase;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item.active .nav-link{
+        color: #e84545;
+
+}
+
+.navbar .nav-item.active .nav-link::after{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+.navbar .nav-item.active .nav-link::before{
+    content: "";
+    position: absolute;
+    width:50%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: #e84545;
+    transition: 0.4s linear;
+}
+
+
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+
+.navbar .nav-item .nav-link:hover::after{
+    width: 50%
+}
+
+.navbar .nav-item .nav-link:hover::before{
+    width: 50%
+
+}
+
+/*Hero Area CSS*/
+
+.hero-area{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.hero-area h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    padding: 0 10%;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.hero-area p{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.7;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.hero-area .btn-cta{
+    color: #fff;
+    border: 1px solid #e84545;
+    background: #e84545;
+    padding: 7px 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.hero-area .btn-cta:hover{
+    background: #d42020;
+    border: 1px solid #d42020;
+}
+
+
+
+/*Service Section CSS*/
+
+.service{
+    padding: 50px 0;
+}
+
+.service .box{
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 5%;
+}
+
+.service .box img{
+    margin-bottom: 20px;
+}
+
+.service .box h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service .box p{
+    line-height: 1.7;
+    color: #6c7279;
+}
